@@ -11,7 +11,7 @@ export default function ShoppingCart (props){
 
          {
            props.data.features.map(obj => {
-             if(obj.enable == true){
+             if(obj.enable === true){
               return <li><span className="fa-li"><i className="fas fa-check"></i></span>{obj.iStrong ? <strong>{obj.name}</strong> : obj.name}</li>
              }else{
               return <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span>{obj.name}</li>
